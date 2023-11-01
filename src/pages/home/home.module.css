@@ -1,0 +1,135 @@
+.container {
+    margin:0 20px;
+}
+
+.form {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    gap:16px;
+}
+
+.form input {
+    width:100%;
+    outline: none;
+    border-radius:6px;
+    padding: 0 10px;
+    height:46px;
+}
+
+.form button {
+    background-color: #18171c;
+    border:none;
+}
+
+.criptotable{
+    margin: 20px 0;
+    padding:0;
+    width:100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+}
+
+
+.criptohead {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size:14px;
+}
+
+.tr {
+    background-color: #1d1c20;
+}
+
+.tdLabel span {
+    font-weight: bold;
+    font-size:1.1em;
+    color: #fff;
+}
+
+.tdLabel, .tdGained, .tdLoss {
+    color: #bbb;
+}
+
+.tdGained {
+    color: #12f98a;
+}
+
+.tdLoss {
+    color: #f91257;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    transition: color .4s;
+}
+
+.link:hover {
+    color: #30beff;
+}
+
+table td,
+table th{
+    text-align: center;
+    padding:14px;
+}
+
+td:first-child,
+tr:first-child{
+    border-radius: 8px 0 0 8px;
+}
+td:last-child,
+tr:last-child{
+    border-radius: 8px 0 0 8px;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    .criptohead {
+        border: 0;
+        height: 1px;
+        clip: rect(0 0 0 0);
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+
+    }
+    
+    .tr {
+        border-bottom: 1px solid #ddd;
+        display:block;
+        margin-bottom:14px;
+    }
+
+    table td {
+        font-size:14px;
+        border-bottom: 1px solid rgba(221, 221, 211, 0.160);
+        display:block;
+        text-align:right;
+    }
+
+    table td:last-child {
+        border-bottom:0;
+    }
+
+    td:first-child,
+    tr:first-child{
+        border-radius: 0;
+    }
+    td:last-child,
+    tr:last-child{
+        border-radius: 0;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #fff;
+        text-transform: #fff;
+        float:left;
+    }
+}

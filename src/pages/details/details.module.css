@@ -1,0 +1,36 @@
+.container {
+    color:#fff;
+    margin:auto;
+}
+
+.info {
+    margin-bottom:16px;
+    text-align: center;
+}
+
+.tdGained {
+    color: #12f98a;
+}
+
+.tdLoss {
+    color: #f91257;
+}
+
+.content {
+    background-color: #0f0f0f;
+    max-width:400px;
+    margin: 24px auto;
+    padding:24px;
+    border-radius:6px;
+}
+
+.content p{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+
+}
+
+.content p:not(:last-of-type){
+    margin-bottom:20px;
+}
